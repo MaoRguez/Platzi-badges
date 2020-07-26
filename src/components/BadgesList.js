@@ -33,9 +33,7 @@ class BadgesList extends React.Component {
           {this.props.badges.map((badge) => {
             return (
               <li key={badge.id}>
-                <p>
-                  <BadgesListItem badge={badge} />
-                </p>
+                <BadgesListItem badge={badge} />
               </li>
             );
           })}

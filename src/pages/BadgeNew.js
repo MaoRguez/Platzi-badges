@@ -4,7 +4,6 @@ import '../components/styles/BadgeNew.css';
 import header from '../images/badge-header.svg';
 import Badge from '../components/badge';
 import BadgeForm from '../components/BadgeForm';
-import Navbar from '../components/Navbar';
 
 class BadgeNew extends React.Component {
   state = { form: {
@@ -26,8 +25,7 @@ class BadgeNew extends React.Component {
 
   render() {
     return (
-      <div>
-        <Navbar />
+      <React.Fragment>
         <div className="BadgeNew__hero">
           <img className="img-fluid" src={header} alt="Logo"/>
         </div>
@@ -53,7 +51,7 @@ class BadgeNew extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
