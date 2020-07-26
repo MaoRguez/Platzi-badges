@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import './global.css'
-import BadgeNew from './pages/BadgeNew';
+import App from './components/App';
 
 const container = document.getElementById('app');
 //const element = <h1>Hello, Platzi Badges!</h1>
 
-ReactDOM.render(<BadgeNew />, container);
+ReactDOM.render(<App />, container);
